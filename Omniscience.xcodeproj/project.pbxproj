@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79ADCDD817A35CD400D84BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDD717A35CD400D84BA8 /* Foundation.framework */; };
+		79ADCDDD17A35CD400D84BA8 /* Omniscience.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79ADCDDC17A35CD400D84BA8 /* Omniscience.h */; };
+		79ADCDDF17A35CD400D84BA8 /* Omniscience.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCDDE17A35CD400D84BA8 /* Omniscience.m */; };
+		79ADCDE717A35CD500D84BA8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDE617A35CD500D84BA8 /* SenTestingKit.framework */; };
+		79ADCDE917A35CD500D84BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDE817A35CD500D84BA8 /* UIKit.framework */; };
+		79ADCDEA17A35CD500D84BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDD717A35CD400D84BA8 /* Foundation.framework */; };
+		79ADCDED17A35CD500D84BA8 /* libOmniscience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDD417A35CD400D84BA8 /* libOmniscience.a */; };
+		79ADCDF317A35CD500D84BA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79ADCDF117A35CD500D84BA8 /* InfoPlist.strings */; };
+		79ADCDF617A35CD500D84BA8 /* OmniscienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCDF517A35CD500D84BA8 /* OmniscienceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79ADCDEB17A35CD500D84BA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79ADCDCC17A35CD400D84BA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79ADCDD317A35CD400D84BA8;
+			remoteInfo = Omniscience;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79ADCDD217A35CD400D84BA8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				79ADCDDD17A35CD400D84BA8 /* Omniscience.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		79ADCDD417A35CD400D84BA8 /* libOmniscience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOmniscience.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79ADCDD717A35CD400D84BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79ADCDDB17A35CD400D84BA8 /* Omniscience-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Omniscience-Prefix.pch"; sourceTree = "<group>"; };
+		79ADCDDC17A35CD400D84BA8 /* Omniscience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Omniscience.h; sourceTree = "<group>"; };
+		79ADCDDE17A35CD400D84BA8 /* Omniscience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Omniscience.m; sourceTree = "<group>"; };
+		79ADCDE517A35CD500D84BA8 /* OmniscienceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmniscienceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79ADCDE617A35CD500D84BA8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		79ADCDE817A35CD500D84BA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		79ADCDF017A35CD500D84BA8 /* OmniscienceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OmniscienceTests-Info.plist"; sourceTree = "<group>"; };
+		79ADCDF217A35CD500D84BA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79ADCDF417A35CD500D84BA8 /* OmniscienceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OmniscienceTests.h; sourceTree = "<group>"; };
+		79ADCDF517A35CD500D84BA8 /* OmniscienceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OmniscienceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79ADCDD117A35CD400D84BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ADCDD817A35CD400D84BA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ADCDE117A35CD500D84BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ADCDE717A35CD500D84BA8 /* SenTestingKit.framework in Frameworks */,
+				79ADCDE917A35CD500D84BA8 /* UIKit.framework in Frameworks */,
+				79ADCDEA17A35CD500D84BA8 /* Foundation.framework in Frameworks */,
+				79ADCDED17A35CD500D84BA8 /* libOmniscience.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79ADCDCB17A35CD400D84BA8 = {
+			isa = PBXGroup;
+			children = (
+				79ADCDD917A35CD400D84BA8 /* Omniscience */,
+				79ADCDEE17A35CD500D84BA8 /* OmniscienceTests */,
+				79ADCDD617A35CD400D84BA8 /* Frameworks */,
+				79ADCDD517A35CD400D84BA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79ADCDD517A35CD400D84BA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79ADCDD417A35CD400D84BA8 /* libOmniscience.a */,
+				79ADCDE517A35CD500D84BA8 /* OmniscienceTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79ADCDD617A35CD400D84BA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79ADCDD717A35CD400D84BA8 /* Foundation.framework */,
+				79ADCDE617A35CD500D84BA8 /* SenTestingKit.framework */,
+				79ADCDE817A35CD500D84BA8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79ADCDD917A35CD400D84BA8 /* Omniscience */ = {
+			isa = PBXGroup;
+			children = (
+				79ADCDDC17A35CD400D84BA8 /* Omniscience.h */,
+				79ADCDDE17A35CD400D84BA8 /* Omniscience.m */,
+				79ADCDDA17A35CD400D84BA8 /* Supporting Files */,
+			);
+			path = Omniscience;
+			sourceTree = "<group>";
+		};
+		79ADCDDA17A35CD400D84BA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79ADCDDB17A35CD400D84BA8 /* Omniscience-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79ADCDEE17A35CD500D84BA8 /* OmniscienceTests */ = {
+			isa = PBXGroup;
+			children = (
+				79ADCDF417A35CD500D84BA8 /* OmniscienceTests.h */,
+				79ADCDF517A35CD500D84BA8 /* OmniscienceTests.m */,
+				79ADCDEF17A35CD500D84BA8 /* Supporting Files */,
+			);
+			path = OmniscienceTests;
+			sourceTree = "<group>";
+		};
+		79ADCDEF17A35CD500D84BA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79ADCDF017A35CD500D84BA8 /* OmniscienceTests-Info.plist */,
+				79ADCDF117A35CD500D84BA8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79ADCDD317A35CD400D84BA8 /* Omniscience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79ADCDF917A35CD500D84BA8 /* Build configuration list for PBXNativeTarget "Omniscience" */;
+			buildPhases = (
+				79ADCDD017A35CD400D84BA8 /* Sources */,
+				79ADCDD117A35CD400D84BA8 /* Frameworks */,
+				79ADCDD217A35CD400D84BA8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Omniscience;
+			productName = Omniscience;
+			productReference = 79ADCDD417A35CD400D84BA8 /* libOmniscience.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		79ADCDE417A35CD500D84BA8 /* OmniscienceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79ADCDFC17A35CD500D84BA8 /* Build configuration list for PBXNativeTarget "OmniscienceTests" */;
+			buildPhases = (
+				79ADCDE017A35CD500D84BA8 /* Sources */,
+				79ADCDE117A35CD500D84BA8 /* Frameworks */,
+				79ADCDE217A35CD500D84BA8 /* Resources */,
+				79ADCDE317A35CD500D84BA8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79ADCDEC17A35CD500D84BA8 /* PBXTargetDependency */,
+			);
+			name = OmniscienceTests;
+			productName = OmniscienceTests;
+			productReference = 79ADCDE517A35CD500D84BA8 /* OmniscienceTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79ADCDCC17A35CD400D84BA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OMNI;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Allogy Interactive";
+			};
+			buildConfigurationList = 79ADCDCF17A35CD400D84BA8 /* Build configuration list for PBXProject "Omniscience" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79ADCDCB17A35CD400D84BA8;
+			productRefGroup = 79ADCDD517A35CD400D84BA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79ADCDD317A35CD400D84BA8 /* Omniscience */,
+				79ADCDE417A35CD500D84BA8 /* OmniscienceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79ADCDE217A35CD500D84BA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ADCDF317A35CD500D84BA8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79ADCDE317A35CD500D84BA8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79ADCDD017A35CD400D84BA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ADCDDF17A35CD400D84BA8 /* Omniscience.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ADCDE017A35CD500D84BA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ADCDF617A35CD500D84BA8 /* OmniscienceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79ADCDEC17A35CD500D84BA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79ADCDD317A35CD400D84BA8 /* Omniscience */;
+			targetProxy = 79ADCDEB17A35CD500D84BA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79ADCDF117A35CD500D84BA8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79ADCDF217A35CD500D84BA8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79ADCDF717A35CD500D84BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		79ADCDF817A35CD500D84BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79ADCDFA17A35CD500D84BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Omniscience.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omniscience/Omniscience-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		79ADCDFB17A35CD500D84BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Omniscience.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omniscience/Omniscience-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		79ADCDFD17A35CD500D84BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omniscience/Omniscience-Prefix.pch";
+				INFOPLIST_FILE = "OmniscienceTests/OmniscienceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		79ADCDFE17A35CD500D84BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Omniscience/Omniscience-Prefix.pch";
+				INFOPLIST_FILE = "OmniscienceTests/OmniscienceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79ADCDCF17A35CD400D84BA8 /* Build configuration list for PBXProject "Omniscience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79ADCDF717A35CD500D84BA8 /* Debug */,
+				79ADCDF817A35CD500D84BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79ADCDF917A35CD500D84BA8 /* Build configuration list for PBXNativeTarget "Omniscience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79ADCDFA17A35CD500D84BA8 /* Debug */,
+				79ADCDFB17A35CD500D84BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79ADCDFC17A35CD500D84BA8 /* Build configuration list for PBXNativeTarget "OmniscienceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79ADCDFD17A35CD500D84BA8 /* Debug */,
+				79ADCDFE17A35CD500D84BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79ADCDCC17A35CD400D84BA8 /* Project object */;
+}
