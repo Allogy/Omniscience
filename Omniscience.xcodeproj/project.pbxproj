@@ -16,6 +16,7 @@
 		79ADCDED17A35CD500D84BA8 /* libOmniscience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDD417A35CD400D84BA8 /* libOmniscience.a */; };
 		79ADCDF317A35CD500D84BA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79ADCDF117A35CD500D84BA8 /* InfoPlist.strings */; };
 		79ADCDF617A35CD500D84BA8 /* OmniscienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCDF517A35CD500D84BA8 /* OmniscienceTests.m */; };
+		89B98356A5714F7E8975CE78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D58C581B9EE419A80DFC78E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D58C581B9EE419A80DFC78E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ADCDD417A35CD400D84BA8 /* libOmniscience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOmniscience.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ADCDD717A35CD400D84BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79ADCDDB17A35CD400D84BA8 /* Omniscience-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Omniscience-Prefix.pch"; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		79ADCDF217A35CD500D84BA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79ADCDF417A35CD500D84BA8 /* OmniscienceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OmniscienceTests.h; sourceTree = "<group>"; };
 		79ADCDF517A35CD500D84BA8 /* OmniscienceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OmniscienceTests.m; sourceTree = "<group>"; };
+		AF2B52C566014C85A7304C63 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ADCDD817A35CD400D84BA8 /* Foundation.framework in Frameworks */,
+				89B98356A5714F7E8975CE78 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,7 @@
 				79ADCDEE17A35CD500D84BA8 /* OmniscienceTests */,
 				79ADCDD617A35CD400D84BA8 /* Frameworks */,
 				79ADCDD517A35CD400D84BA8 /* Products */,
+				AF2B52C566014C85A7304C63 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +109,7 @@
 				79ADCDD717A35CD400D84BA8 /* Foundation.framework */,
 				79ADCDE617A35CD500D84BA8 /* SenTestingKit.framework */,
 				79ADCDE817A35CD500D84BA8 /* UIKit.framework */,
+				6D58C581B9EE419A80DFC78E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79ADCDF917A35CD500D84BA8 /* Build configuration list for PBXNativeTarget "Omniscience" */;
 			buildPhases = (
+				7481412577154765B94B1E84 /* Check Pods Manifest.lock */,
 				79ADCDD017A35CD400D84BA8 /* Sources */,
 				79ADCDD117A35CD400D84BA8 /* Frameworks */,
 				79ADCDD217A35CD400D84BA8 /* CopyFiles */,
+				2BB34BCE15A943809E201017 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +232,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BB34BCE15A943809E201017 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7481412577154765B94B1E84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		79ADCDE317A35CD500D84BA8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +371,7 @@
 		};
 		79ADCDFA17A35CD500D84BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2B52C566014C85A7304C63 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Omniscience.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -345,6 +384,7 @@
 		};
 		79ADCDFB17A35CD500D84BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2B52C566014C85A7304C63 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Omniscience.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -404,6 +444,7 @@
 				79ADCDFB17A35CD500D84BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79ADCDFC17A35CD500D84BA8 /* Build configuration list for PBXNativeTarget "OmniscienceTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +453,7 @@
 				79ADCDFE17A35CD500D84BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
