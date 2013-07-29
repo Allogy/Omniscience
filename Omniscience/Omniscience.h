@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+Omniscience.h"
 
 @interface Omniscience : NSObject
 
