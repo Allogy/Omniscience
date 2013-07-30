@@ -19,6 +19,7 @@
 		79ADCE0117A6E73800D84BA8 /* OMNINotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCE0017A6E73800D84BA8 /* OMNINotification.m */; };
 		79ADCE0517A6F18D00D84BA8 /* NSObject+Omniscience.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCE0417A6F18C00D84BA8 /* NSObject+Omniscience.m */; };
 		79ADCE0817A6F38F00D84BA8 /* MAKVONotification+Omniscience.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCE0717A6F38F00D84BA8 /* MAKVONotification+Omniscience.m */; };
+		79ADCE0C17A708D900D84BA8 /* OMNIProxyObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCE0B17A708D800D84BA8 /* OMNIProxyObservation.m */; };
 		89B98356A5714F7E8975CE78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D58C581B9EE419A80DFC78E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		79ADCE0417A6F18C00D84BA8 /* NSObject+Omniscience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Omniscience.m"; sourceTree = "<group>"; };
 		79ADCE0617A6F38F00D84BA8 /* MAKVONotification+Omniscience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAKVONotification+Omniscience.h"; sourceTree = "<group>"; };
 		79ADCE0717A6F38F00D84BA8 /* MAKVONotification+Omniscience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAKVONotification+Omniscience.m"; sourceTree = "<group>"; };
+		79ADCE0A17A708D800D84BA8 /* OMNIProxyObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMNIProxyObservation.h; sourceTree = "<group>"; };
+		79ADCE0B17A708D800D84BA8 /* OMNIProxyObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMNIProxyObservation.m; sourceTree = "<group>"; };
 		AF2B52C566014C85A7304C63 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -134,6 +137,8 @@
 				79ADCE0217A6F00A00D84BA8 /* OMNIObservation.h */,
 				79ADCE0317A6F18C00D84BA8 /* NSObject+Omniscience.h */,
 				79ADCE0417A6F18C00D84BA8 /* NSObject+Omniscience.m */,
+				79ADCE0A17A708D800D84BA8 /* OMNIProxyObservation.h */,
+				79ADCE0B17A708D800D84BA8 /* OMNIProxyObservation.m */,
 				79ADCE0617A6F38F00D84BA8 /* MAKVONotification+Omniscience.h */,
 				79ADCE0717A6F38F00D84BA8 /* MAKVONotification+Omniscience.m */,
 				79ADCDDA17A35CD400D84BA8 /* Supporting Files */,
@@ -303,6 +308,7 @@
 				79ADCE0117A6E73800D84BA8 /* OMNINotification.m in Sources */,
 				79ADCE0517A6F18D00D84BA8 /* NSObject+Omniscience.m in Sources */,
 				79ADCE0817A6F38F00D84BA8 /* MAKVONotification+Omniscience.m in Sources */,
+				79ADCE0C17A708D900D84BA8 /* OMNIProxyObservation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NSObject+Omniscience.h"
+#import "OMNIProxyObservation.h"
 
 @interface Omniscience : NSObject
 
