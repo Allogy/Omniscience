@@ -22,6 +22,11 @@
 	return self;
 }
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"%@ observer: %@ target: %@ keyPath: %@ change: %@", [super description], self.observer, self.target, self.keyPath, self.change];
+}
+
 - (NSKeyValueChange)kind
 {
 	return [[self.change objectForKey:NSKeyValueChangeKindKey] unsignedIntegerValue];
