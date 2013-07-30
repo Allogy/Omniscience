@@ -11,9 +11,9 @@
 
 @implementation NSObject (Omniscience)
 
-- (id<OMNIObservation>)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options block:(void (^)(OMNINotification *))block
+- (id<OMNIObservation>)addObserverForKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options block:(void (^)(OMNINotification *))block
 {
-	return (id<OMNIObservation>)[self addObserver:observer keyPath:keyPath options:options block:^(MAKVONotification *notification) {
+	return (id<OMNIObservation>)[self addObservationKeyPath:keyPath options:options block:^(MAKVONotification *notification) {
 		block(notification.omniscienceNotification);
 	}];
 }
