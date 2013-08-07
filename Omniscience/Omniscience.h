@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NSObject+Omniscience.h"
 #import "OMNIProxyObservation.h"
+#import "OMNIKeyPath.h"
 
 @interface Omniscience : NSObject
 

@@ -70,6 +70,7 @@
 		79ADCE0A17A708D800D84BA8 /* OMNIProxyObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMNIProxyObservation.h; sourceTree = "<group>"; };
 		79ADCE0B17A708D800D84BA8 /* OMNIProxyObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMNIProxyObservation.m; sourceTree = "<group>"; };
 		79BAAA9717A77AD300A6D47C /* Omniscience.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Omniscience.podspec; sourceTree = "<group>"; };
+		79CF23CE17B292B800C11FAF /* OMNIKeyPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMNIKeyPath.h; sourceTree = "<group>"; };
 		AF2B52C566014C85A7304C63 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -134,6 +135,7 @@
 			children = (
 				79ADCDDC17A35CD400D84BA8 /* Omniscience.h */,
 				79ADCDDE17A35CD400D84BA8 /* Omniscience.m */,
+				79CF23CE17B292B800C11FAF /* OMNIKeyPath.h */,
 				79ADCDFF17A6E73700D84BA8 /* OMNINotification.h */,
 				79ADCE0017A6E73800D84BA8 /* OMNINotification.m */,
 				79ADCE0217A6F00A00D84BA8 /* OMNIObservation.h */,
