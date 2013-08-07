@@ -34,12 +34,34 @@
 
 - (id)newValue
 {
-	return [self.change objectForKey:NSKeyValueChangeNewKey];
+	NSKeyValueChange kind = self.kind;
+	if (kind != NSKeyValueChangeSetting && kind != NSKeyValueChangeReplacement && kind != NSKeyValueChangeInsertion)
+		return nil;
+
+	id value = [self.change objectForKey:NSKeyValueChangeNewKey];
+	NSAssert(value, @"No new value found - you must specify NSKeyValueObservingOptionNew.");
+
+	// Don't return NSNulls
+	if ([value isKindOfClass:[NSNull class]])
+		return nil;
+
+	return value;
 }
 
 - (id)oldValue
 {
-	return [self.change objectForKey:NSKeyValueChangeOldKey];
+	NSKeyValueChange kind = self.kind;
+	if (kind != NSKeyValueChangeSetting && kind != NSKeyValueChangeReplacement && kind != NSKeyValueChangeRemoval)
+		return nil;
+
+	id value = [self.change objectForKey:NSKeyValueChangeOldKey];
+	NSAssert(value, @"No new value found - you must specify NSKeyValueObservingOptionOld.");
+
+	// Don't return NSNulls
+	if ([value isKindOfClass:[NSNull class]])
+		return nil;
+
+	return value;
 }
 
 - (NSIndexSet *)indexes
