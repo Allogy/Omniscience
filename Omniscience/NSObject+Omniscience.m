@@ -18,4 +18,16 @@
 	}];
 }
 
+- (void)observeTarget:(id)target keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *))block
+{
+	[self observeTarget:target keyPath:keyPath options:options block:^(MAKVONotification *notification) {
+		block(notification.omniscienceNotification);
+	}];
+}
+
+- (void)stopObservingTarget:(id)target keyPath:(NSString *)keyPath
+{
+	[self stopObserving:target keyPath:keyPath];
+}
+
 @end
