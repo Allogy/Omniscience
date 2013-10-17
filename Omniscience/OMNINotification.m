@@ -55,7 +55,8 @@
 		return nil;
 
 	id value = [self.change objectForKey:NSKeyValueChangeOldKey];
-	NSAssert(value, @"No new value found - you must specify NSKeyValueObservingOptionOld.");
+	// Assert that there is a value. But when first setting a value, there is no old value, so it will be nil.
+	NSAssert(value || kind == NSKeyValueChangeSetting, @"No new value found - you must specify NSKeyValueObservingOptionOld.");
 
 	// Don't return NSNulls
 	if ([value isKindOfClass:[NSNull class]])
