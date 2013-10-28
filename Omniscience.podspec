@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  version = "0.1.1"
+  version = "0.2.0"
 
   s.name         = "Omniscience"
   s.version      = version
