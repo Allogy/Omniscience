@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79241555188DC72B00085C4C /* OMNITargetKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 79241554188DC72B00085C4C /* OMNITargetKeyPath.m */; };
 		7957A63917EE58B40003D77D /* MAKVONotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7957A63817EE58B40003D77D /* MAKVONotificationCenter.m */; };
 		79ADCDD817A35CD400D84BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDD717A35CD400D84BA8 /* Foundation.framework */; };
 		79ADCDDD17A35CD400D84BA8 /* Omniscience.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79ADCDDC17A35CD400D84BA8 /* Omniscience.h */; };
@@ -47,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79241553188DC72B00085C4C /* OMNITargetKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMNITargetKeyPath.h; sourceTree = "<group>"; };
+		79241554188DC72B00085C4C /* OMNITargetKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMNITargetKeyPath.m; sourceTree = "<group>"; };
 		7957A63717EE58B40003D77D /* MAKVONotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAKVONotificationCenter.h; sourceTree = "<group>"; };
 		7957A63817EE58B40003D77D /* MAKVONotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAKVONotificationCenter.m; sourceTree = "<group>"; };
 		79ADCDD417A35CD400D84BA8 /* libOmniscience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOmniscience.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +141,8 @@
 				79ADCE0217A6F00A00D84BA8 /* OMNIObservation.h */,
 				79ADCE0317A6F18C00D84BA8 /* NSObject+Omniscience.h */,
 				79ADCE0417A6F18C00D84BA8 /* NSObject+Omniscience.m */,
+				79241553188DC72B00085C4C /* OMNITargetKeyPath.h */,
+				79241554188DC72B00085C4C /* OMNITargetKeyPath.m */,
 				79ADCE0A17A708D800D84BA8 /* OMNIProxyObservation.h */,
 				79ADCE0B17A708D800D84BA8 /* OMNIProxyObservation.m */,
 				79ADCE0617A6F38F00D84BA8 /* MAKVONotification+Omniscience.h */,
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ADCDDF17A35CD400D84BA8 /* Omniscience.m in Sources */,
+				79241555188DC72B00085C4C /* OMNITargetKeyPath.m in Sources */,
 				79ADCE0117A6E73800D84BA8 /* OMNINotification.m in Sources */,
 				7957A63917EE58B40003D77D /* MAKVONotificationCenter.m in Sources */,
 				79ADCE0517A6F18D00D84BA8 /* NSObject+Omniscience.m in Sources */,

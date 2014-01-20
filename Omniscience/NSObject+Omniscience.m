@@ -18,6 +18,19 @@
 	}];
 }
 
+- (void)observeTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *))block
+{
+	[self stopObservingTargetKeyPath:targetKeyPath];
+	[self observeTarget:targetKeyPath.target keyPath:targetKeyPath.keyPath options:options block:^(MAKVONotification *notification) {
+		block(notification.omniscienceNotification);
+	}];
+}
+
+- (void)stopObservingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath
+{
+	[self stopObserving:targetKeyPath.target keyPath:targetKeyPath.keyPath];
+}
+
 - (void)observeTarget:(id)target keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *))block
 {
 	[self observeTarget:target keyPath:keyPath options:options block:^(MAKVONotification *notification) {
