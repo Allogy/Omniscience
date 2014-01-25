@@ -8,11 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-// Macro for making an object that includes both a target and key path.
+// Macro for making an object that includes both a target and key path. PATH must be a property on OBJ, which will be converted into an NSString.
 // Used to populate the first parameter of -observeTargetKeyPath:options:usingBlock:
 #define OMNITargetKeyPath(OBJ, PATH) \
 ([[_OMNITargetKeyPath alloc] initWithTarget:OBJ keyPath:(((void)(NO && ((void)OBJ.PATH, NO)), @# PATH))])
 
+// Macro for making an object that includes both a target and key path. Unlike the OMNITargetKeyPath, PATH must be an NSString.
+// Used to populate the first parameter of -observeTargetKeyPath:options:usingBlock:
+#define OMNITargetAndKeyPathString(OBJ, PATH) \
+([[_OMNITargetKeyPath alloc] initWithTarget:OBJ keyPath:PATH])
+
+/*
+ You should typically not create this object yourself. Use the macros above instead.
+ */
 @interface _OMNITargetKeyPath : NSObject
 
 @property (nonatomic, strong, readonly) id target;
