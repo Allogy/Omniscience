@@ -13,7 +13,6 @@
 		79ADCDDD17A35CD400D84BA8 /* Omniscience.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79ADCDDC17A35CD400D84BA8 /* Omniscience.h */; };
 		79ADCDDF17A35CD400D84BA8 /* Omniscience.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCDDE17A35CD400D84BA8 /* Omniscience.m */; };
 		79ADCDE717A35CD500D84BA8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDE617A35CD500D84BA8 /* SenTestingKit.framework */; };
-		79ADCDE917A35CD500D84BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDE817A35CD500D84BA8 /* UIKit.framework */; };
 		79ADCDEA17A35CD500D84BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDD717A35CD400D84BA8 /* Foundation.framework */; };
 		79ADCDED17A35CD500D84BA8 /* libOmniscience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADCDD417A35CD400D84BA8 /* libOmniscience.a */; };
 		79ADCDF317A35CD500D84BA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79ADCDF117A35CD500D84BA8 /* InfoPlist.strings */; };
@@ -59,7 +58,6 @@
 		79ADCDDE17A35CD400D84BA8 /* Omniscience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Omniscience.m; sourceTree = "<group>"; };
 		79ADCDE517A35CD500D84BA8 /* OmniscienceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmniscienceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ADCDE617A35CD500D84BA8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		79ADCDE817A35CD500D84BA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		79ADCDF017A35CD500D84BA8 /* OmniscienceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OmniscienceTests-Info.plist"; sourceTree = "<group>"; };
 		79ADCDF217A35CD500D84BA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79ADCDF417A35CD500D84BA8 /* OmniscienceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OmniscienceTests.h; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ADCDE717A35CD500D84BA8 /* SenTestingKit.framework in Frameworks */,
-				79ADCDE917A35CD500D84BA8 /* UIKit.framework in Frameworks */,
 				79ADCDEA17A35CD500D84BA8 /* Foundation.framework in Frameworks */,
 				79ADCDED17A35CD500D84BA8 /* libOmniscience.a in Frameworks */,
 			);
@@ -125,7 +122,6 @@
 			children = (
 				79ADCDD717A35CD400D84BA8 /* Foundation.framework */,
 				79ADCDE617A35CD500D84BA8 /* SenTestingKit.framework */,
-				79ADCDE817A35CD500D84BA8 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,7 +340,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -367,7 +363,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
