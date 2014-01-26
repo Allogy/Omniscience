@@ -25,6 +25,7 @@
  Stops observing the target keyPath combination if it had already been observing it with a different block.
  */
 - (void)observeTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *notification))block;
+- (void)observeTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *notification))block;
 - (void)stopObservingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath;
 
 // DEPRECATED: use methods above instead
