@@ -24,9 +24,9 @@
  
  Stops observing the target keyPath combination if it had already been observing it with a different block.
  */
-- (void)observeTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *notification))block;
-- (void)observeTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *notification))block;
-- (void)stopObservingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath;
+- (void)observeTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *notification))block;
+- (void)observeTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *notification))block;
+- (void)stopObservingTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath;
 
 /*
  Observe a target keyPath combination, but may be called again with a different target, stopping the observation for the original call.
@@ -34,8 +34,8 @@
  Please use the OMNITargetKeyPath macro to create the first parameter.
  Stops observing the keyPath for any target if it had already been observing it with a different block.
  */
-- (void)observeMovingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *notification))block;
-- (void)stopObservingMovingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath;
+- (void)observeMovingTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *notification))block;
+- (void)stopObservingMovingTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath;
 
 // DEPRECATED: use methods above instead
 - (void)observeTarget:(id)target keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *notification))block DEPRECATED_ATTRIBUTE;

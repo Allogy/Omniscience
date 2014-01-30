@@ -8,7 +8,7 @@
 
 #import "OMNITargetKeyPath.h"
 
-@implementation _OMNITargetKeyPath
+@implementation OMNITargetKeyPath
 
 - (id)initWithTarget:(id)target keyPath:(NSString *)keyPath
 {
@@ -18,6 +18,16 @@
 		_keyPath = [keyPath copy];
 	}
 	return self;
+}
+
+- (void)setValue:(id)value
+{
+	[self.target setValue:value forKeyPath:self.keyPath];
+}
+
+- (id)value
+{
+	return [self.target valueForKeyPath:self.keyPath];
 }
 
 @end

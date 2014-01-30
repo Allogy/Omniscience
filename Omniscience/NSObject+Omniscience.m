@@ -18,7 +18,7 @@
 	}];
 }
 
-- (void)observeTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *))block
+- (void)observeTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *))block
 {
 	[self stopObservingTargetKeyPath:targetKeyPath];
 	[self observeTarget:targetKeyPath.target keyPath:targetKeyPath.keyPath options:options block:^(MAKVONotification *notification) {
@@ -26,7 +26,7 @@
 	}];
 }
 
-- (void)observeTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *))block
+- (void)observeTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *))block
 {
 	NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
 	if (shouldCallBlockInitially)
@@ -37,12 +37,12 @@
 	[self observeTargetKeyPath:targetKeyPath options:options usingBlock:block];
 }
 
-- (void)stopObservingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath
+- (void)stopObservingTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath
 {
 	[self stopObserving:targetKeyPath.target keyPath:targetKeyPath.keyPath];
 }
 
-- (void)observeMovingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *))block
+- (void)observeMovingTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath options:(NSKeyValueObservingOptions)options usingBlock:(void (^)(OMNINotification *))block
 {
 	[self stopObservingMovingTargetKeyPath:targetKeyPath];
 	[self observeTarget:targetKeyPath.target keyPath:targetKeyPath.keyPath options:options block:^(MAKVONotification *notification) {
@@ -50,7 +50,7 @@
 	}];
 }
 
-- (void)observeMovingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *))block
+- (void)observeMovingTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath shouldCallBlockInitially:(BOOL)shouldCallBlockInitially shouldCallBlockPriorToUpdates:(BOOL)shouldCallBlockPriorToUpdates usingBlock:(void (^)(OMNINotification *))block
 {
 	NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
 	if (shouldCallBlockInitially)
@@ -61,7 +61,7 @@
 	[self observeMovingTargetKeyPath:targetKeyPath options:options usingBlock:block];
 }
 
-- (void)stopObservingMovingTargetKeyPath:(_OMNITargetKeyPath *)targetKeyPath
+- (void)stopObservingMovingTargetKeyPath:(OMNITargetKeyPath *)targetKeyPath
 {
 	[self stopObserving:nil keyPath:targetKeyPath.keyPath];
 }
