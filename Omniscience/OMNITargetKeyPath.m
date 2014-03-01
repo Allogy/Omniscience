@@ -20,6 +20,11 @@
 	return self;
 }
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"%@ Observing '%@' on object: %@", [super description], self.keyPath, self.target];
+}
+
 - (void)setValue:(id)value
 {
 	[self.target setValue:value forKeyPath:self.keyPath];
