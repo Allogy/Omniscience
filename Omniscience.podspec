@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  version = "0.2.0"
+  version = "0.2.1"
 
   s.name         = "Omniscience"
   s.version      = version
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = { "Richard Venable" => "rvenable@allogy.com" }
-  s.source       = { :git => "https://github.com/Allogy/Omniscience.git", :tag => version }
+  s.source       = { :git => "https://github.com/Allogy/Omniscience.git", :tag => 'v' + s.version.to_s }
   s.platform     = :ios, '5.0'
   s.source_files = 'Omniscience/**/*.{h,m}'
   s.framework  = 'Foundation'
